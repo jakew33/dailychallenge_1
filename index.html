@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scoreboard</title>
+  </head>
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+  <body class="bg-dark">
+    <header class="container-fluid">
+      <div class="row p-5">
+        <div class="col-md-12 d-flex justify-content-center p-2">
+          <button class="p-1" onclick="reset()">RESET</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="cardHome text-light">
+          <h1 class="text-center p-5">HOME: <span id="homeScore">0</span></h1>
+          <div class="d-flex flex-column align-items-center">
+            <button class="btn btn-dark mb-2" onclick="homeScore()">
+              HOME+1
+            </button>
+            <button class="btn btn-dark" onclick="homeScoreThree()">
+              HOME+3
+            </button>
+
+            <h1 class="text-center p-5">AWAY: <span id="awayScore">0</span></h1>
+            <button class="btn btn-dark mb-2" onclick="awayScore()">
+              AWAY+1
+            </button>
+            <button class="btn btn-dark" onclick="awayScoreThree()">
+              AWAY+3
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!--   <div class="d-flex col-md-12 align-content-center">
+          <div class="col-8 p-5 text-light">
+            <h1>AWAY</h1>
+            <span id="awayScore" class="text-start m-5">0</span>
+            <div class="d-grid gap-2 col-md-2 col-2 p-5">
+              <button class="btn btn-dark" onclick="awayScore()">
+                AWAY+1
+              </button>
+              <div class="d-grid gap-2 col-12">
+                <button class="btn btn-dark" onclick="awayScoreThree()">
+                  AWAY+3
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->

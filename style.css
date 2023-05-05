@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-image{
+  background-image: url("https: //hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg");
+
+
+}
+.scoreboard{
+  filter: drop-shadow(2px 2px 25px rgba(11, 11, 101, 0.39)) contrast(5);
+
+
+}
+
+.awayScore{
+  content: center;
+}
+
+.col-md-6 {
+  height: 400px;
+  width: 600px;
+}
+
+.btnDark{
+background-color: aquamarine;
+
+}
+
+.cardHome {
+  background-color: rgba(217, 7, 236, 0.057);
+  border-radius: 10rempx;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-color: rgb(255, 0, 0);
+  height: 550px;
+  height: 550px;
+  filter: drop-shadow(2px 2px 25px rgb(0, 242, 255)) contrast(1);
+  color: rgb(255, 255, 255);
+}
+
+span{
+  color: rgb(255, 247, 0);
+  filter: drop-shadow(2px 2px 25px rgb(238, 255, 0)) contrast(100);
+}
+
+.bg-dark{
+  background-color: rgb(83, 15, 15);
+}
+
+
+
+ img {
+   
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+body {
+  background-image: url("https://media.discordapp.net/attachments/1018634227463487538/1102810541728215130/Neon_Mammoth_Final_Fantasy_X_blitzball_stadium_blitzball_56c13676-e689-40fc-b457-b7b5d5c422a8.png?width=1714&height=939");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  
+
+}  
+
+
+
